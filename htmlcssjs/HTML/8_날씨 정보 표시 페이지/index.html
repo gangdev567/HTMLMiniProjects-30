@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨 정보</title>
+</head>
+<body>
+    <header>
+        <h1>서울 날씨 정보</h1>
+        <p>현재 날씨: 맑음</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#seoul">서울</a></li>
+            <li><a href="#busan">부산</a></li>
+            <li><a href="#jeju">제주</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>현재 날씨 정보</h2>
+            <dl>
+                <dt>현재 온도</dt>
+                <dd>18°C</dd>
+                <dt>오늘의 최고 기온</dt>
+                <dd>22°C</dd>
+                <dt>오늘의 최저 기온</dt>
+                <dd>10°C</dd>
+            </dl>
+        </section>
+        
+        <section>
+            <h2>5일간 일일 예보</h2>
+            <table>
+                <tr>
+                    <th>날짜</th>
+                    <th>날씨 상태</th>
+                    <th>최고 기온</th>
+                    <th>최저 기온</th>
+                </tr>
+                <tr>
+                    <td>2023-03-15</td>
+                    <td>맑음</td>
+                    <td>22°C</td>
+                    <td>10°C</td>
+                </tr>
+                <tr>
+                    <td>2023-03-16</td>
+                    <td>구름 많음</td>
+                    <td>20°C</td>
+                    <td>12°C</td>
+                </tr>
+                <tr>
+                    <td>2023-03-17</td>
+                    <td>비</td>
+                    <td>18°C</td>
+                    <td>15°C</td>
+                </tr>
+                <tr>
+                    <td>2023-03-18</td>
+                    <td>구름 많음</td>
+                    <td>19°C</td>
+                    <td>13°C</td>
+                </tr>
+                <tr>
+                    <td>2023-03-19</td>
+                    <td>맑음</td>
+                    <td>23°C</td>
+                    <td>11°C</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 날씨 정보. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>업데이트 시간: <time datetime="2023-03-15T08:00:00">오늘 오전 8시</time></p>
+    </footer>
+</body>
+</html>
