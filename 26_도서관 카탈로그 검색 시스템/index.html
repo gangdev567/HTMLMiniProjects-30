@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서관 카탈로그 검색</title>
+</head>
+<body>
+    <header>
+        <h1>서울 중앙 도서관</h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>도서 검색</legend>
+                <label for="search-term">검색어:</label>
+                <input type="text" id="search-term" name="search-term" required>
+                <br><br>
+                <label for="search-option">검색 옵션:</label>
+                <select id="search-option" name="search-option">
+                    <option value="title">제목</option>
+                    <option value="author">저자</option>
+                    <option value="isbn">ISBN</option>
+                </select>
+                <br><br>
+                <button type="submit">검색</button>
+            </fieldset>
+        </form>
+        
+        <h2>검색 결과</h2>
+        <ul>
+            <li>
+                <article>
+                    <h3>인공지능의 미래</h3>
+                    <p>저자: 김철수</p>
+                    <p>출판사: 한빛미디어</p>
+                    <p>출판년도: 2022</p>
+                    <p>ISBN: 978-89-7915-123-4</p>
+                    <button>상세 정보</button>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>데이터 사이언스 입문</h3>
+                    <p>저자: 이영희</p>
+                    <p>출판사: 위키북스</p>
+                    <p>출판년도: 2023</p>
+                    <p>ISBN: 978-89-7915-567-8</p>
+                    <button>상세 정보</button>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>웹 개발자를 위한 JavaScript</h3>
+                    <p>저자: 박종민</p>
+                    <p>출판사: 인사이트</p>
+                    <p>출판년도: 2022</p>
+                    <p>ISBN: 978-89-7915-901-1</p>
+                    <button>상세 정보</button>
+                </article>
+            </li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 서울 중앙 도서관. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>최근 검색된 도서: <q>인공지능의 미래</q> (ISBN: <abbr title="International Standard Book Number">978-89-7915-123-4</abbr>)</p>
+    </footer>
+</body>
+</html>

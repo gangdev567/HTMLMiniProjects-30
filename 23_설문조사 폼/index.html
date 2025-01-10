@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+<body>
+    <header>
+        <h1>사용자 만족도 설문조사</h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인 정보</legend>
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>개인 정보 (계속)</legend>
+                <label for="gender">성별:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">남성</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">여성</label>
+                <br><br>
+                <label for="age">연령대:</label>
+                <select id="age" name="age">
+                    <option value="20s">20대</option>
+                    <option value="30s">30대</option>
+                    <option value="40s">40대</option>
+                    <option value="50s">50대 이상</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>관심 분야</legend>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                <label for="tech">기술</label>
+                <input type="checkbox" id="art" name="interests" value="art">
+                <label for="art">예술</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">스포츠</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>만족도 평가</legend>
+                <input type="radio" id="very-satisfied" name="satisfaction" value="5">
+                <label for="very-satisfied">매우 만족</label>
+                <input type="radio" id="satisfied" name="satisfaction" value="4">
+                <label for="satisfied">만족</label>
+                <input type="radio" id="neutral" name="satisfaction" value="3">
+                <label for="neutral">보통</label>
+                <input type="radio" id="dissatisfied" name="satisfaction" value="2">
+                <label for="dissatisfied">불만족</label>
+                <input type="radio" id="very-dissatisfied" name="satisfaction" value="1">
+                <label for="very-dissatisfied">매우 불만족</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>의견</legend>
+                <textarea name="comments" rows="5" cols="30"></textarea>
+            </fieldset>
+            
+            <button type="submit">제출</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 설문조사. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>설문 마감일: <time datetime="2023-03-31">2023년 3월 31일</time></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>식당 테이블 예약</title>
+</head>
+<body>
+    <header>
+        <h1>맛있는 한식당</h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>예약 정보</legend>
+                <label for="reservation-date">예약 날짜:</label>
+                <input type="date" id="reservation-date" name="reservation-date" required>
+                <br><br>
+                <label for="reservation-time">예약 시간:</label>
+                <select id="reservation-time" name="reservation-time">
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                </select>
+                <br><br>
+                <label for="number-of-people">인원 수:</label>
+                <input type="number" id="number-of-people" name="number-of-people" min="1" max="10" required>
+                <br><br>
+                <label for="table-type">테이블 유형:</label>
+                <input type="radio" id="normal" name="table-type" value="normal">
+                <label for="normal">일반 테이블</label>
+                <input type="radio" id="vip" name="table-type" value="vip">
+                <label for="vip">VIP 테이블</label>
+            </fieldset>
+            
+            <button type="submit">예약하기</button>
+        </form>
+        
+        <h2>예약 가능한 시간대</h2>
+        <table>
+            <tr>
+                <th>시간</th>
+                <th>일반 테이블</th>
+                <th>VIP 테이블</th>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>○</td>
+                <td>○</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>○</td>
+                <td>○</td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td>○</td>
+                <td>○</td>
+            </tr>
+            <tr>
+                <td>19:00</td>
+                <td>○</td>
+                <td>○</td>
+            </tr>
+            <tr>
+                <td>20:00</td>
+                <td>○</td>
+                <td>○</td>
+            </tr>
+        </table>
+    </main>
+    
+    <aside>
+        <h2>최근 예약 내역</h2>
+        <ul>
+            <li>
+                <p>김태호님: 2023년 3월 15일 19:00, 일반 테이블 4인</p>
+            </li>
+            <li>
+                <p>이수진님: 2023년 3월 17일 12:00, VIP 테이블 2인</p>
+            </li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 맛있는 한식당. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>예약 마감일: <time datetime="2023-03-31">2023년 3월 31일</time></p>
+    </footer>
+</body>
+</html>

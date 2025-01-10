@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔 예약 시스템</title>
+</head>
+<body>
+    <header>
+        <h1>그랜드 호텔</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#reservation">예약하기</a></li>
+            <li><a href="#rooms">객실 정보</a></li>
+            <li><a href="#services">호텔 서비스</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="reservation">
+            <h2>예약하기</h2>
+            <form>
+                <label for="checkin">체크인 날짜:</label>
+                <input type="date" id="checkin" name="checkin"><br><br>
+                <label for="checkout">체크아웃 날짜:</label>
+                <input type="date" id="checkout" name="checkout"><br><br>
+                <label for="adults">성인 수:</label>
+                <input type="number" id="adults" name="adults" min="1" max="5"><br><br>
+                <label for="children">어린이 수:</label>
+                <input type="number" id="children" name="children" min="0" max="3"><br><br>
+                <input type="submit" value="예약하기">
+            </form>
+        </section>
+        
+        <section id="rooms">
+            <h2>객실 유형</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>스탠다드룸</h3>
+                        <p>가격: 150,000원</p>
+                        <p>설명: 2인용 싱글베드, 20평방미터</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>디럭스룸</h3>
+                        <p>가격: 250,000원</p>
+                        <p>설명: 2인용 더블베드, 30평방미터, 시티뷰</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>스위트룸</h3>
+                        <p>가격: 500,000원</p>
+                        <p>설명: 4인용, 50평방미터, 전망대 포함</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>최근 예약 내역</h2>
+        <ul>
+            <li>
+                <p>김태호님: 2023년 3월 15일 ~ 3월 17일, 디럭스룸</p>
+            </li>
+            <li>
+                <p>이수진님: 2023년 3월 20일 ~ 3월 22일, 스위트룸</p>
+            </li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 그랜드 호텔. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>고객센터: 02-1234-5678 (24시간 운영)</p>
+    </footer>
+</body>
+</html>

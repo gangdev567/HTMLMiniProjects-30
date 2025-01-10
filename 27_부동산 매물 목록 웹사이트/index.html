@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부동산 매물 목록</title>
+</head>
+<body>
+    <header>
+        <h1>부동산 매물 목록</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#search">매물 검색</a></li>
+            <li><a href="#list">매물 목록</a></li>
+            <li><a href="#about">사이트 소개</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="search">
+            <h2>매물 검색</h2>
+            <form>
+                <label for="property-type">부동산 유형:</label>
+                <select id="property-type" name="property-type">
+                    <option value="apartment">아파트</option>
+                    <option value="house">주택</option>
+                    <option value="officetel">오피스텔</option>
+                </select>
+                <br><br>
+                <label for="location">지역:</label>
+                <select id="location" name="location">
+                    <option value="seoul">서울</option>
+                    <option value="busan">부산</option>
+                    <option value="daegu">대구</option>
+                </select>
+                <br><br>
+                <label for="price-range">가격 범위:</label>
+                <select id="price-range" name="price-range">
+                    <option value="100-500">100만 ~ 500만</option>
+                    <option value="500-1000">500만 ~ 1000만</option>
+                    <option value="1000-">1000만 이상</option>
+                </select>
+                <br><br>
+                <button type="submit">검색</button>
+            </form>
+        </section>
+        
+        <section id="list">
+            <h2>매물 목록</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>강남 아파트</h3>
+                        <p>주소: 서울 강남구 테헤란로 123</p>
+                        <p>면적: 84.5m²</p>
+                        <p>가격: 1억 2,000만원</p>
+                        <p>방수: 3개, 층수: 15층</p>
+                        <button>상세 보기</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>부산 주택</h3>
+                        <p>주소: 부산 해운대구 우동 456</p>
+                        <p>면적: 150m²</p>
+                        <p>가격: 8,000만원</p>
+                        <p>방수: 4개, 층수: 2층</p>
+                        <button>상세 보기</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>대구 오피스텔</h3>
+                        <p>주소: 대구 중구 동성로 789</p>
+                        <p>면적: 60m²</p>
+                        <p>가격: 4,500만원</p>
+                        <p>방수: 2개, 층수: 10층</p>
+                        <button>상세 보기</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>서울 주택</h3>
+                        <p>주소: 서울 마포구 양화로 321</p>
+                        <p>면적: 120m²</p>
+                        <p>가격: 12,000만원</p>
+                        <p>방수: 4개, 층수: 3층</p>
+                        <button>상세 보기</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>부산 아파트</h3>
+                        <p>주소: 부산 부산진구 서전로 901</p>
+                        <p>면적: 90m²</p>
+                        <p>가격: 9,000만원</p>
+                        <p>방수: 3개, 층수: 20층</p>
+                        <button>상세 보기</button>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 부동산 매물 목록. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>최근 등록된 매물: <q>강남 아파트</q> (주소: 서울 강남구 테헤란로 123, 가격: 1억 2,000만원)</p>
+    </footer>
+</body>
+</html>

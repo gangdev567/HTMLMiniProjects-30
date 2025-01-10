@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔 객실 예약</title>
+</head>
+<body>
+    <header>
+        <h1>그랜드 호텔</h1>
+    </header>
+    
+    <main>
+        <form>
+            <fieldset>
+                <legend>예약 정보</legend>
+                <label for="checkin">체크인 날짜:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <br><br>
+                <label for="checkout">체크아웃 날짜:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <br><br>
+                <label for="adults">성인 수:</label>
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br><br>
+                <label for="children">어린이 수:</label>
+                <select id="children" name="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>객실 유형</legend>
+                <input type="radio" id="single" name="room-type" value="single">
+                <label for="single">싱글룸</label>
+                <input type="radio" id="double" name="room-type" value="double">
+                <label for="double">더블룸</label>
+                <input type="radio" id="twin" name="room-type" value="twin">
+                <label for="twin">트윈룸</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>객실 가격 정보</legend>
+                <table>
+                    <tr>
+                        <th>객실 유형</th>
+                        <th>1박 가격</th>
+                    </tr>
+                    <tr>
+                        <td>싱글룸</td>
+                        <td>120,000원</td>
+                    </tr>
+                    <tr>
+                        <td>더블룸</td>
+                        <td>180,000원</td>
+                    </tr>
+                    <tr>
+                        <td>트윈룸</td>
+                        <td>200,000원</td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <button type="submit">예약하기</button>
+        </form>
+    </main>
+    
+    <aside>
+        <h2>최근 예약 내역</h2>
+        <ul>
+            <li>
+                <p>김태호님: 2023년 3월 15일 ~ 3월 17일, 더블룸</p>
+            </li>
+            <li>
+                <p>이수진님: 2023년 3월 20일 ~ 3월 22일, 트윈룸</p>
+            </li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 그랜드 호텔. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>예약 마감일: <time datetime="2023-03-31">2023년 3월 31일</time></p>
+    </footer>
+</body>
+</html>

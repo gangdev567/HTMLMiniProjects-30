@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘서트 티켓 판매</title>
+</head>
+<body>
+    <header>
+        <h1>콘서트 티켓 판매</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#concerts">콘서트 목록</a></li>
+            <li><a href="#ticket-form">티켓 구매</a></li>
+            <li><a href="#recent-purchases">최근 구매 내역</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="concerts">
+            <h2>콘서트 목록</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>비욘세 콘서트</h3>
+                        <p>아티스트: 비욘세</p>
+                        <p>날짜: <time datetime="2023-05-15">2023년 5월 15일</time></p>
+                        <p>장소: 서울 올림픽 체조경기장</p>
+                        <p>티켓 가격: 150,000원</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>에드 시런 콘서트</h3>
+                        <p>아티스트: 에드 시런</p>
+                        <p>날짜: <time datetime="2023-06-20">2023년 6월 20일</time></p>
+                        <p>장소: 부산 아시아드 주경기장</p>
+                        <p>티켓 가격: 120,000원</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>테일러 스위프트 콘서트</h3>
+                        <p>아티스트: 테일러 스위프트</p>
+                        <p>날짜: <time datetime="2023-07-10">2023년 7월 10일</time></p>
+                        <p>장소: 서울 잠실 올림픽 주경기장</p>
+                        <p>티켓 가격: 180,000원</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="ticket-form">
+            <h2>티켓 구매</h2>
+            <form>
+                <label for="concert">콘서트 선택:</label>
+                <select id="concert" name="concert">
+                    <option value="beyonce">비욘세 콘서트</option>
+                    <option value="edsheeran">에드 시런 콘서트</option>
+                    <option value="taylorswift">테일러 스위프트 콘서트</option>
+                </select>
+                <br><br>
+                <label for="tickets">티켓 수:</label>
+                <select id="tickets" name="tickets">
+                    <option value="1">1장</option>
+                    <option value="2">2장</option>
+                    <option value="3">3장</option>
+                    <option value="4">4장</option>
+                </select>
+                <br><br>
+                <button type="submit">구매하기</button>
+            </form>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>최근 구매 내역</h2>
+        <ul>
+            <li>
+                <p>김태호님: 비욘세 콘서트 2장 (2023년 5월 15일)</p>
+            </li>
+            <li>
+                <p>이수진님: 에드 시런 콘서트 1장 (2023년 6월 20일)</p>
+            </li>
+        </ul>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 콘서트 티켓 판매. 현재 날짜: <time datetime="2023-03-15">2023년 3월 15일</time></p>
+        <p>최근 콘서트: <q>비욘세 콘서트</q> (날짜: <time datetime="2023-05-15">2023년 5월 15일</time>, 장소: 서울 올림픽 체조경기장)</p>
+    </footer>
+</body>
+</html>
